@@ -1,3 +1,5 @@
+// errorのときに実行番号を表示しないように注意
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -15,22 +17,25 @@ int main()
         string op;
 
         cin >> op >> B;
-        cout << i + 1 << ":";
 
         if (op == "+")
         {
+            cout << i + 1 << ":";
             cout << (x += B) << endl;
         }
         else if (op == "-")
         {
+            cout << i + 1 << ":";
             cout << (x -= B) << endl;
         }
         else if (op == "*")
         {
+            cout << i + 1 << ":";
             cout << (x *= B) << endl;
         }
         else if (op == "/" && B != 0)
         {
+            cout << i + 1 << ":";
             cout << (x /= B) << endl;
         }
         else
