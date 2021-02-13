@@ -1,3 +1,5 @@
+// not complete
+
 #include <bits/stdc++.h>
 using namespace std;
 #define rep(i, n) for (int i = 0; i < (int)(n); i++)
@@ -7,17 +9,24 @@ using namespace std;
 
 int main()
 {
-    int a, b, c;
+    int b, c;
     int cnt = 1;
 
-    cin >> a >> b >> c;
+    cin >> b >> c;
 
-    rep(i, a)
+    int max_n = (c - (c % 2)) / 2 + 1;
+
+    rep2m(n, max_n, 0)
     {
-        rep(j, a)
+        rep2m(n, max_n, 0)
         {
-            if (1)
+            int B = b - 1;
+            rep2p(m, n, max_n)
             {
+                if (-2 <= c)
+                {
+                    ++cnt;
+                }
             }
         }
     }
