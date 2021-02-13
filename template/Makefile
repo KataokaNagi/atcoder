@@ -11,8 +11,8 @@ SRC_DIR := ./src
 EXE_DIR := ./exe
 STDCXX_DIR := ../../bits
 
-CXX := c++
-CXX_FLAGS := -std=c++14 -Wall -I $(STDCXX_DIR)
+CXX := g++
+CXX_FLAGS := -g -std=c++14 -Wall -I $(STDCXX_DIR)
 
 ########################################
 # default target name

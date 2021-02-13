@@ -13,8 +13,8 @@ SRC_DIR := ./atcoder.jp/$(CONTEST_NAME)/src
 EXE_DIR := ./atcoder.jp/$(CONTEST_NAME)/exe
 STDCXX_DIR := ./bits
 
-CXX := c++
-CXX_FLAGS := -std=c++14 -Wall -I $(STDCXX_DIR)
+CXX := g++
+CXX_FLAGS := -g -std=c++14 -Wall -I $(STDCXX_DIR)
 
 ########################################
 # default target name
