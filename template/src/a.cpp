@@ -2,18 +2,24 @@
 using namespace std;
 #define rep(i, n) for (int i = 0; i < (int)(n); i++)
 #define repm(i, n) for (int i = (int)(n - 1); i >= 0; i--)
-#define rep2p(i, s, n) for (int i = (s); i < (int)(n); i++)
-#define rep2m(i, n, s) for (int i = (int)(n - 1); i >= (s); i--)
+#define rep2(i, s, n) for (int i = (s); i < (int)(n); i++)
+#define repm2(i, s, n) for (int i = (int)(n - 1); i >= (s); i--)
+using ll = long long; // more than 10^9
+using P = pair<int, int>;
 
 int main()
 {
-    int a, b, c;
-    int cnt = 1;
+    int a, b;
+    int cnt = 0;
+    ll n;
+    string s;
+    bool can = false;
 
-    cin >> a >> b >> c;
+    cin >> a >> b;
 
     rep(i, a)
     {
+        bool odd = (i % 2 == 0);
         rep(j, a)
         {
             if (1)
@@ -23,4 +29,5 @@ int main()
     }
 
     cout << cnt << endl;
+    return 0;
 }
