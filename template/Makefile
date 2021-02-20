@@ -11,7 +11,7 @@ SRC_DIR := ./src
 EXE_DIR := ./exe
 STDCXX_DIR := ../../bits
 
-CXX := g++
+CXX := c++
 CXX_FLAGS := -g -std=c++14 -Wall -I $(STDCXX_DIR)
 
 ########################################
@@ -40,6 +40,25 @@ e: $(SRC_DIR)/e.cpp
 
 f: $(SRC_DIR)/f.cpp
 	$(CXX) $(CXX_FLAGS) $< -o $(EXE_DIR)/$@
+
+# run
+runa: $(EXE_DIR)/a.exe
+	$(EXE_DIR)/a.exe
+
+runb: $(EXE_DIR)/b.exe
+	$(EXE_DIR)/b.exe
+
+runc: $(EXE_DIR)/c.exe
+	$(EXE_DIR)/c.exe
+
+rund: $(EXE_DIR)/d.exe
+	$(EXE_DIR)/d.exe
+
+rune: $(EXE_DIR)/e.exe
+	$(EXE_DIR)/e.exe
+
+runf: $(EXE_DIR)/f.exe
+	$(EXE_DIR)/f.exe
 
 # clean outs
 cl:

@@ -4,12 +4,13 @@
     // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
         // @see 【VSCode】デバッグ機能を使ってC/C++のデバッグをする https://mattyan1053.hatenablog.com/entry/2018/12/08/155228
         {
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/atcoder.jp/apg4b/exe/ex11.exe",
+            "program": "${workspaceFolder}/atcoder.jp/abc192/exe/c.exe",
             "args": [
                     // "<",
                     // "input.txt",
