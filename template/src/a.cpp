@@ -37,24 +37,18 @@ int main()
     int a, b;
     unordered_set<ll> s;
     // string s;
-
     bool can = false;
 
     cin >> n;
     cin >> a >> b;
 
-    rep(i, n)
+    // bool odd = (a % 2 == 0);
+    if (1)
     {
-        bool odd = (i % 2 == 0);
-        rep(j, a)
-        {
-            if (1)
-            {
-                s.insert(a);
-            }
-        }
+        // s.insert(a);
     }
 
-    cout << s.size() << endl;
+    cout << a << endl;
+    // cout << s.size() << endl;
     return 0;
 }
