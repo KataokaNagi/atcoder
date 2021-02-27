@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <unordered_set>
 using namespace std;
 #define rep(i, n) for (int i = 0; i < (int)(n); i++)
 #define repm(i, n) for (int i = (int)(n - 1); i >= 0; i--)
@@ -8,27 +9,23 @@ using namespace std;
 #define rall(v) v.rbegin(), v.rend()
 using ll = long long; // more than 10^9
 using P = pair<int, int>;
-
-// aよりもbが大きいならばaをbで更新する
-// (更新されたならばtrueを返す)
+const int INF = 0x3fffffff;
 template <typename T>
 bool chmax(T &a, const T &b)
 {
     if (a < b)
     {
-        a = b; // aをbで更新
+        a = b;
         return true;
     }
     return false;
 }
-// aよりもbが小さいならばaをbで更新する
-// (更新されたならばtrueを返す)
 template <typename T>
 bool chmin(T &a, const T &b)
 {
     if (a > b)
     {
-        a = b; // aをbで更新
+        a = b;
         return true;
     }
     return false;
@@ -36,25 +33,28 @@ bool chmin(T &a, const T &b)
 
 int main()
 {
-    int a, b;
-    int cnt = 0;
     ll n;
-    string s;
+    int a, b;
+    unordered_set<ll> s;
+    // string s;
+
     bool can = false;
 
+    cin >> n;
     cin >> a >> b;
 
-    rep(i, a)
+    rep(i, n)
     {
         bool odd = (i % 2 == 0);
         rep(j, a)
         {
             if (1)
             {
+                s.insert(a);
             }
         }
     }
 
-    cout << cnt << endl;
+    cout << s.size() << endl;
     return 0;
 }

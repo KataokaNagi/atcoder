@@ -10,7 +10,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/atcoder.jp/abc192/exe/c.exe",
+            "program": "${workspaceFolder}/atcoder.jp/abc193/exe/b.exe",
             "args": [
                     // "<",
                     // "input.txt",

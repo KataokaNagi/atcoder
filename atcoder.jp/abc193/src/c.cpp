@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#include <unordered_set>
 using namespace std;
 #define rep(i, n) for (int i = 0; i < (int)(n); i++)
 #define repm(i, n) for (int i = (int)(n - 1); i >= 0; i--)
@@ -9,23 +8,27 @@ using namespace std;
 #define rall(v) v.rbegin(), v.rend()
 using ll = long long; // more than 10^9
 using P = pair<int, int>;
-const int INF = 0x3fffffff;
+
+// aよりもbが大きいならばaをbで更新する
+// (更新されたならばtrueを返す)
 template <typename T>
 bool chmax(T &a, const T &b)
 {
     if (a < b)
     {
-        a = b;
+        a = b; // aをbで更新
         return true;
     }
     return false;
 }
+// aよりもbが小さいならばaをbで更新する
+// (更新されたならばtrueを返す)
 template <typename T>
 bool chmin(T &a, const T &b)
 {
     if (a > b)
     {
-        a = b;
+        a = b; // aをbで更新
         return true;
     }
     return false;
@@ -33,28 +36,35 @@ bool chmin(T &a, const T &b)
 
 int main()
 {
+    int cnt = 0;
     ll n;
-    int a, b;
-    unordered_set<ll> s;
-    // string s;
-
-    bool can = false;
 
     cin >> n;
-    cin >> a >> b;
+    vector<bool> used_a((int)sqrt(10000000000));
 
-    rep(i, n)
+    for (ll a = 2; a < n; ++a)
     {
-        bool odd = (i % 2 == 0);
-        rep(j, a)
+        used_a.at(a) = false;
+    }
+
+    for (ll a = 2; a < n; ++a)
+    {
+        if (!used_a.at(a) && n % a == 0)
         {
-            if (1)
+            for (ll ab = a; ab < n; ab *= a)
             {
-                s.insert(a);
+                used_a.at(ab) = true;
+                ++cnt;
             }
+
+            // int ab = n;
+            // for (int b = 2; (ab = n / a) > 1; ++b)
+            // {
+            //     ++cnt;
+            // }
         }
     }
 
-    cout << s.size() << endl;
+    cout << cnt << endl;
     return 0;
 }
