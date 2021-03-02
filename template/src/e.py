@@ -1,4 +1,16 @@
-import math
+import bisect  # bisect
+import collections  # deque, Counter, most_common, defaultdict
+import copy  # copy, deepcopy
+import heapq  # heapify, heappush, heappop
+import itertools  # accumulate, groupby, product, permutations, combinations
+import math  # gcd, ceil, factorial
+import numpy  # fmax, argmax, vstack
+import string  # ascii_lowercase, ascii_uppercase, lower, upper, swapcase
+import sys  # stdin
+def I(): return int(sys.stdin.readline().rstrip())
+def LI(): return list(map(int, sys.stdin.readline().rstrip().split()))
+def S(): return sys.stdin.readline().rstrip()
+def LS(): return list(sys.stdin.readline().rstrip().split())
 
 
 def chmax(a, b):
@@ -16,22 +28,20 @@ def chmin(a, b):
     else:
         return False
 
-# math.factorial(n) # n!
-# math.ceil(n/m) # ceiling func
-# INF = 0x3fffffff
 
-
-n, a, b = map(int, input().split())
-# li = list(map(int, input().split()))
+n = I()
+# a = [LI() for _ in range(n)]
+# a = numpy.array(a)
 # st = set(li)
-# s = [word for word in input().split()]
 # can = False
 # odd = (a % 2 == 0)
+# INF = 0x3fffffff
 
 for i in range(n):
+    # a = I()
+    # b = I()
     if (1):
         # st.insert(a)
-        print(a)
+        None
 
-print(a if n > 0 else b if n == 0 else "error")
-# print(st.size())
+print(a if n > 0 else "error")
