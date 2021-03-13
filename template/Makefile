@@ -67,22 +67,22 @@ fd: $(SRC_DIR)/f.cpp
 	$(CXX) $(CXX_FLAGS) $< -o $(EXE_DIR)/$@
 
 # run
-runa: $(EXE_DIR)/a.exe
+ar: $(EXE_DIR)/a.exe
 	$(EXE_DIR)/a.exe
 
-runb: $(EXE_DIR)/b.exe
+br: $(EXE_DIR)/b.exe
 	$(EXE_DIR)/b.exe
 
-runc: $(EXE_DIR)/c.exe
+cr: $(EXE_DIR)/c.exe
 	$(EXE_DIR)/c.exe
 
-rund: $(EXE_DIR)/d.exe
+dr: $(EXE_DIR)/d.exe
 	$(EXE_DIR)/d.exe
 
-rune: $(EXE_DIR)/e.exe
+er: $(EXE_DIR)/e.exe
 	$(EXE_DIR)/e.exe
 
-runf: $(EXE_DIR)/f.exe
+fr: $(EXE_DIR)/f.exe
 	$(EXE_DIR)/f.exe
 
 # clean outs
