@@ -30,21 +30,40 @@ all: a b c d e f
 
 # compile each files
 a: $(SRC_DIR)/a.cpp
-	$(CXX) $(CXX_FLAGS) $< -o $(EXE_DIR)/$@
+	$(CXX) $< -o $(EXE_DIR)/$@
 
 b: $(SRC_DIR)/b.cpp
-	$(CXX) $(CXX_FLAGS) $< -o $(EXE_DIR)/$@
+	$(CXX) $< -o $(EXE_DIR)/$@
 
 c: $(SRC_DIR)/c.cpp
-	$(CXX) $(CXX_FLAGS) $< -o $(EXE_DIR)/$@
+	$(CXX) $< -o $(EXE_DIR)/$@
 
 d: $(SRC_DIR)/d.cpp
-	$(CXX) $(CXX_FLAGS) $< -o $(EXE_DIR)/$@
+	$(CXX) $< -o $(EXE_DIR)/$@
 
 e: $(SRC_DIR)/e.cpp
-	$(CXX) $(CXX_FLAGS) $< -o $(EXE_DIR)/$@
+	$(CXX) $< -o $(EXE_DIR)/$@
 
 f: $(SRC_DIR)/f.cpp
+	$(CXX) $< -o $(EXE_DIR)/$@
+
+# compile each files with debug info
+ad: $(SRC_DIR)/a.cpp
+	$(CXX) $(CXX_FLAGS) $< -o $(EXE_DIR)/$@
+
+bd: $(SRC_DIR)/b.cpp
+	$(CXX) $(CXX_FLAGS) $< -o $(EXE_DIR)/$@
+
+cd: $(SRC_DIR)/c.cpp
+	$(CXX) $(CXX_FLAGS) $< -o $(EXE_DIR)/$@
+
+dd: $(SRC_DIR)/d.cpp
+	$(CXX) $(CXX_FLAGS) $< -o $(EXE_DIR)/$@
+
+ed: $(SRC_DIR)/e.cpp
+	$(CXX) $(CXX_FLAGS) $< -o $(EXE_DIR)/$@
+
+fd: $(SRC_DIR)/f.cpp
 	$(CXX) $(CXX_FLAGS) $< -o $(EXE_DIR)/$@
 
 # run
