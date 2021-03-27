@@ -12,7 +12,7 @@ EXE_DIR := ./exe
 STDCXX_DIR := ../../bits
 
 CXX := c++
-CXX_FLAGS := -g -std=c++14 -Wall -I $(STDCXX_DIR)
+CXX_FLAGS := -g -O0 -std=c++14 -Wall -I $(STDCXX_DIR)
 
 PY := python
 
