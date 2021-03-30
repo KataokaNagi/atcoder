@@ -49,22 +49,22 @@ f: $(SRC_DIR)/f.cpp
 
 # compile each files with debug info
 ad: $(SRC_DIR)/a.cpp
-	$(CXX) $(CXX_FLAGS) $< -o $(EXE_DIR)/$@
+	$(CXX) $(CXX_FLAGS) $< -o $(EXE_DIR)/a
 
 bd: $(SRC_DIR)/b.cpp
-	$(CXX) $(CXX_FLAGS) $< -o $(EXE_DIR)/$@
+	$(CXX) $(CXX_FLAGS) $< -o $(EXE_DIR)/b
 
 cd: $(SRC_DIR)/c.cpp
-	$(CXX) $(CXX_FLAGS) $< -o $(EXE_DIR)/$@
+	$(CXX) $(CXX_FLAGS) $< -o $(EXE_DIR)/c
 
 dd: $(SRC_DIR)/d.cpp
-	$(CXX) $(CXX_FLAGS) $< -o $(EXE_DIR)/$@
+	$(CXX) $(CXX_FLAGS) $< -o $(EXE_DIR)/d
 
 ed: $(SRC_DIR)/e.cpp
-	$(CXX) $(CXX_FLAGS) $< -o $(EXE_DIR)/$@
+	$(CXX) $(CXX_FLAGS) $< -o $(EXE_DIR)/e
 
 fd: $(SRC_DIR)/f.cpp
-	$(CXX) $(CXX_FLAGS) $< -o $(EXE_DIR)/$@
+	$(CXX) $(CXX_FLAGS) $< -o $(EXE_DIR)/f
 
 # run
 ar: $(EXE_DIR)/a.exe
