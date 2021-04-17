@@ -17,7 +17,8 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/atcoder.jp/abc198/exe/b.exe",
+            // "program": "${workspaceFolder}/atcoder.jp/abc198/exe/b.exe",
+            "program": "${workspaceFolder}/atcoder.jp/jp-student-championship_2021/exe/c.exe",
             "args": [
                 // "<",
                 // "input.txt",

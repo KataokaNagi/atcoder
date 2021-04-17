@@ -2,6 +2,7 @@
     "files.associations": {
         "*.pde": "pde",
         "random": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "xhash": "cpp"
     }
 }
