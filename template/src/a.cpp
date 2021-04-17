@@ -35,20 +35,14 @@ int main()
 {
     ll n;
     int a, b;
-    unordered_set<ll> s;
-    // string s;
-    bool can = false;
 
     cin >> n;
     cin >> a >> b;
 
-    // bool odd = (a % 2 == 0);
     if (1)
     {
-        // s.insert(a);
     }
 
     cout << a << endl;
-    // cout << s.size() << endl;
     return 0;
 }
