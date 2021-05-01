@@ -3,6 +3,7 @@
         "*.pde": "pde",
         "random": "cpp",
         "vector": "cpp",
-        "xhash": "cpp"
+        "xhash": "cpp",
+        "xstring": "cpp"
     }
 }
