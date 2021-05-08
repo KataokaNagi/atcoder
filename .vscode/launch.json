@@ -17,8 +17,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            // "program": "${workspaceFolder}/atcoder.jp/abc199/exe/c.exe",
-            "program": "${workspaceFolder}/atcoder.jp/zone-energy-programming-contest/exe/a.exe",
+            "program": "${workspaceFolder}/atcoder.jp/abc200/exe/b.exe",
             "args": [
                 // "<",
                 // "input.txt",
