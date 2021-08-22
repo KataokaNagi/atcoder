@@ -3,7 +3,7 @@
 
 using namespace std;
 using ull = unsigned long long;
-using ll = long long; // more than 10^9
+using ll = long long; // 2^63 - 1 ~ 10^18 > 10^9 ~ 2^31 - 1
 using vi = vector<int>;
 using vl = vector<long>;
 using vll = vector<long long>;
@@ -53,6 +53,15 @@ using P = pair<int, int>;
     else                       \
     {                          \
         cout << "No" << endl;  \
+    }
+#define ACWA(bool)            \
+    if (bool)                 \
+    {                         \
+        cout << "AC" << endl; \
+    }                         \
+    else                      \
+    {                         \
+        cout << "WA" << endl; \
     }
 
 inline int in_int()
@@ -129,6 +138,36 @@ inline void print(const vector<pair<T, S>> &v)
 {
     for (auto &&p : v)
         print(p);
+}
+
+template <typename T>
+ll fact(T &n)
+{
+    if (n < 0)
+        print("ERROR: n < 0 @ fact()");
+
+    ll f = 1;
+    repi(i, n)
+        f *= i;
+    return f;
+}
+
+template <typename T>
+ll comb(T &n, T &r)
+{
+    if (!(0 <= r) || !(r <= n))
+        print("ERROR: !(0 <= r <= n) @ comb()");
+
+    return fact(n) / (fact(r) * fact(n - r));
+}
+
+template <typename T>
+ll perm(T &n, T &r)
+{
+    if (!(0 <= r) || !(r <= n))
+        print("ERROR: !(0 <= r <= n) @ perm()");
+
+    return fact(n) / (fact(n - r));
 }
 
 const int INF = 0x3fffffff;
