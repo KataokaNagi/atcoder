@@ -147,7 +147,7 @@ ll fact(T &n)
         print("ERROR: n < 0 @ fact()");
 
     ll f = 1;
-    repi(i, n)
+    reps(i, n)
         f *= i;
     return f;
 }
